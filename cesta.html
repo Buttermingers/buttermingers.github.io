@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Guitarras</title>
+    <link rel="stylesheet" href="cestaStyle.css">
+</head>
+<body>
+    <header>
+        <h1>Guitar World</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="menu.html">Home</a></li>
+            <li><a href="#">Novedades</a></li>
+        </ul>
+        <div class="search-box">
+            <form method="get" id="search-form">
+               <fieldset>
+                  <input type="text" id="search-input" placeholder="Buscar"  />
+                  <input class="search-button" type="submit" value="Buscar" />
+                  <i class="search-icon"></i>
+               </fieldset>
+            </form>
+         </div>
+    </nav>
+
+    <main>
+        <section>
+            <div class="guitar-item">
+                <img src="img\strato\fender-hybrid-ii-strat-hss-mn-3ts-japan.jpg" alt="Guitarra 2">
+                <h3> Fender Hybrid II</h3>
+                <p>Precio: $299</p>
+                <P>Cantidad:</P>
+                <input type="number" id="guitar1" value="0" min="0">
+            </div>
+
+            <div class="guitar-item">
+                <img src="img\strato\fender-squier-classic-vibe-50-strat-mn-fr.jpg">
+                <h3>Fender Squier classic vibe 50 strat</h3>
+                <p>Precio: $249</p>
+                <P>Cantidad:</P>
+                <input type="number" id="guitar2" value="0" min="0">
+            </div>
+
+            <div class="guitar-item">
+                <img src="img\strato\fender-player-ii-stratocaster-mn-acb.jpg">
+                <h3>Fender Player Stratocaster</h3>
+                <p>Precio: $499</p>
+                <P>Cantidad:</P>
+                <input type="number" id="guitar3" value="0" min="0">
+            </div>
+        </section>
+
+        <div class="total">
+            <p>Total:1542 $</p>
+        </div>
+    </main>
+
+</body>
+</html>

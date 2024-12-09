@@ -6,22 +6,22 @@
 
 body {
     font-family: Arial, sans-serif;
-    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
     background-color: #333;
     color: white;
     display: flex;
+    padding: 20px;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
-    text-align: center;
 }
 
 header h1 {
     font-size: 3em;
-    margin-right: 30px;
 }
 
 header h2 {
@@ -30,32 +30,27 @@ header h2 {
 }
 
 header a {
-    display: flex;
-    align-items: center;
     text-decoration: none;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-header img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
-    transition: transform 0.3s;
-}
-
-header a:hover img {
-    transform: scale(1.1);
+header a:hover {
+    background-color: #f39c12;
 }
 
 nav {
     background-color: #333;
     color: white;
-    padding: 10px 20px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
 }
 
 nav ul {
+    list-style: none;
     display: flex;
     gap: 20px;
 }
@@ -78,7 +73,6 @@ nav ul li a:hover {
 
 #search-input {
     padding: 8px;
-    margin-right: 10px;
     border-radius: 5px;
     border: none;
 }
@@ -97,28 +91,28 @@ nav ul li a:hover {
 }
 
 main {
-	height: 500px;
+    height: auto;
     text-align: center;
     margin-top: 30px;
 }
 
 h2 {
     font-size: 2em;
-    font-weight: bold;
     margin-bottom: 20px;
 }
 
 .menu {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 50px;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias filas */
+    justify-content: space-around; /* Centra los elementos */
+    gap: 10px; /* Espacio entre los elementos */
+    margin: 0 20px;
 }
 
 .menu-item {
-    width: 200px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
+    width: 20%; /* Las imágenes ocupan el 20% del ancho */
 }
 
 .menu-item img {
@@ -131,7 +125,7 @@ h2 {
 
 .menu-item p {
     margin-top: 10px;
-    font-size: 1.2em;
+    font-size: 1em;
     color: #280808;
 }
 
@@ -143,8 +137,9 @@ h2 {
 footer {
     background-color: #333;
     color: white;
-    padding: 20px 0;
+    padding: 2% 10px;
     text-align: center;
+    margin-top: auto;
 }
 
 footer a {
@@ -153,21 +148,23 @@ footer a {
     font-size: 1.2em;
 }
 
-footer a:hover {
-    color: #f39c12;
-}
-
 @media (max-width: 768px) {
     header {
         flex-direction: column;
+        text-align: center;
     }
 
     .menu {
-        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 10px;
     }
 
     .menu-item {
-        width: 80%;
-        margin: 10px auto;
+        width: 45%; /* Ajustamos el tamaño en pantallas pequeñas */
+    }
+
+    footer {
+        text-align: center;
     }
 }

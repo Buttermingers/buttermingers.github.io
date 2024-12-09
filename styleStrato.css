@@ -1,191 +1,142 @@
-*{padding:0;margin:0 ;}
-			body{
-               
-				position: relative;
-				margin: auto;
-				background-image:url(img/menu/definitiveendika.jpg) ;
-				background-repeat: no-repeat;
-				background-size: cover;
-				background-attachment: fixed;
-				background-position: center;
-
-				img{
-					height: auto;
-					width: auto;
-				}
-
-            }
-            /* Reset de márgenes y padding para todos los elementos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo general para el body */
+body {
+    max-width: auto;
+    font-family: Arial, sans-serif;
+}
+
 body {
     font-family: Arial, sans-serif;
 }
 
-/* Estilo para el header */
 header {
-    background-color: #333; /* Fondo oscuro para el header */
-    color: white; /* Texto blanco */
-    display: flex; /* Usamos flexbox para una distribución más controlada */
-    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
-    align-items: center; /* Centra los elementos verticalmente */
-    padding: 20px 40px; /* Padding para crear espacio dentro del header */
-    text-align: center; /* Alineación de texto */
+    background-color: #333;
+    color: white;
+    display: flex;
+    padding: 20px 20px;
 }
 
-/* Estilo para los títulos dentro del header */
 header h1 {
-    font-size: 3em; /* Tamaño grande para el título */
-    font-weight: bold;
-    color: #fff;
-    margin-right: 30px; /* Espacio entre el título y los otros elementos */
+    font-size: 3em;
 }
 
-/* Estilo para el subtítulo (h2) */
 header h2 {
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    position: static;
+    right: 2%;
+    margin: 25px;
+    text-align: right;
     font-size: 1.2em;
-    font-weight: normal;
-    margin: 0 20px; /* Espacio entre el subtítulo y los otros elementos */
-    color: #f39c12; /* Color dorado */
+    color: #f39c12;
 }
 
-/* Estilo para los enlaces de imagen (carrito, perfil) */
 header a {
-    display: flex; /* Alineamos las imágenes y texto en una columna */
-    align-items: center; /* Centra las imágenes verticalmente */
-    text-decoration: none; /* Elimina subrayado de los enlaces */
+    position: relative;
+    left: 690px;
+    text-decoration: none;
+    display: flex;
+    justify-self: self-end;
+    gap: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-/* Estilo para las imágenes */
-header img {
-    width: 40px; /* Tamaño fijo para las imágenes */
-    height: 40px; /* Asegura que las imágenes tengan el mismo tamaño */
-    border-radius: 50%; /* Redondea las imágenes para un estilo más atractivo */
-    margin-right: 10px; /* Espacio entre la imagen y el texto */
-    transition: transform 0.3s ease; /* Añade transición para el efecto hover */
+a:hover {
+    background-color: #f39c12;
 }
 
-/* Efecto hover para las imágenes */
-header a:hover img {
-    transform: scale(1.1); /* Aumenta ligeramente el tamaño de la imagen al pasar el ratón */
-}
-
-/* Estilo para los enlaces de las imágenes */
-header a span {
-    font-size: 1em;
-    color: white; /* Color blanco para los textos de los enlaces */
-}
-
-/* Responsividad: ajusta el header para pantallas más pequeñas */
 @media (max-width: 768px) {
     header {
-        flex-direction: column; /* Cambia la distribución a columna */
+        flex-direction: column; 
         text-align: center;
     }
 
     header h1 {
-        margin-bottom: 15px; /* Reduce el espacio debajo del título */
+        margin-bottom: 15px; 
     }
 
     header h2 {
-        margin-bottom: 15px; /* Reduce el espacio debajo del subtítulo */
+        margin-bottom: 15px; 
     }
 
     header a {
-        margin-top: 10px; /* Añade espacio entre los enlaces */
+        margin-top: 10px; 
     }
 }
 
-            
-            main{
-				margin: auto;
-                width: 96.062992125%;
-			}
-			h2{
-				margin-left: 40%
-				
-				
-			}
-				
+main {
+    margin: auto;
+    width: 96.062992125%;
+}
 
-			section{
-				padding: 1.968%;
-				display: grid;
-				grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
-				row-gap: 15px;
-				column-gap: 15px;	
-				font-size: large;
-				p{
-					align-self: center;
-					justify-self: center;
-					color: rgb(255, 255, 255);
-				}
-				h2{
-					align-self: center;
-					justify-self:center
-				}
-				
-            }
-            
-			/* Estilo general para los elementos dentro de .menu-item */
-	.menu-item {
-    background-color: #f5f5f5; /* Fondo gris claro para la caja */
+h2 {
+    margin-left: 40%;
+}
+
+section {
+    padding: 1.968%;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 15px;
+    column-gap: 15px;    
+    font-size: large;
+}
+
+section p {
+    align-self: center;
+    justify-self: center;
+    color: rgb(255, 255, 255);
+}
+
+section h2 {
+    align-self: center;
+    justify-self: center;
+}
+
+.menu-item {
+    background-color: #f5f5f5; 
     padding: 20px;
-    border-radius: 8px; /* Bordes redondeados para suavizar el diseño */
+    border-radius: 8px; 
     text-align: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil alrededor del elemento */
-    transition: transform 0.3s ease-in-out; /* Transición para efectos */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease-in-out; 
 }
 
-/* Efecto al pasar el ratón sobre el elemento */
 .menu-item:hover {
-    transform: translateY(-5px); /* Efecto de desplazamiento al pasar el ratón */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra más grande al pasar el ratón */
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
 }
 
-/* Estilo para las imágenes dentro de .menu-item */
 .menu-item img {
-    width: 100%; /* Hace que la imagen ocupe el 100% del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    border-radius: 8px; /* Bordes redondeados en la imagen */
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
 }
 
-/* Estilo para los párrafos dentro de .menu-item */
 .menu-item p {
-    color: #333; /* Color de texto oscuro para mejorar la legibilidad en fondo claro */
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    color: #333; 
+    background-color: rgba(255, 255, 255, 0.8); 
     padding: 10px;
-    border-radius: 4px; /* Bordes redondeados */
-    margin: 10px 0; /* Espacio entre párrafos */
-    font-size: 1em; /* Tamaño de fuente moderado */
-    font-weight: bold; /* Negrita para los nombres y precios */
+    border-radius: 4px; 
+    margin: 10px 0; 
+    font-size: 1em; 
+    font-weight: bold; 
 }
 
-/* Para el caso en que los elementos tengan fondo oscuro, como negro o gris oscuro */
 .menu-item.dark p {
-    color: #fff; /* Texto blanco */
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+    color: #fff; 
+    background-color: rgba(0, 0, 0, 0.7); 
 }
 
-/* Estilo para los precios con un color destacado */
 .menu-item p:last-child {
-    font-size: 1.2em; /* Hacer los precios un poco más grandes */
-    color: #e74c3c; /* Color rojo para los precios */
+    font-size: 1.2em; 
+    color: #e74c3c; 
 }
-
-
-
-
-					
-
-		
-
-			
-			
-        
-	
