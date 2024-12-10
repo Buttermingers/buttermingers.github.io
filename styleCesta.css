@@ -15,8 +15,8 @@ header {
     background-color: #333;
     color: white;
     display: flex;
-    justify-content: space-between; /* Alinea los elementos a los extremos */
-    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: space-between; 
+    align-items: center;
     padding: 20px;
     position: relative;
     width: 100%;
@@ -24,7 +24,7 @@ header {
 
 header h1 {
     font-size: 3em;
-    flex: 1; /* Esto hace que el h1 ocupe el espacio restante */
+    flex: 1; 
 }
 
 header h2 {
@@ -32,12 +32,12 @@ header h2 {
     transition: background-color 0.3s;
     font-size: 1.2em;
     color: #f39c12;
-    margin: 0; /* Elimina los márgenes */
-    padding: 0; /* Elimina el relleno */
+    margin: 0; 
+    padding: 0; 
 }
 
 header h2:first-of-type {
-    margin-right: 10px; /* Espacio entre los dos h2 */
+    margin-right: 10px; 
 }
 
 header a {
