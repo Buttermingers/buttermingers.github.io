@@ -106,18 +106,12 @@ main {
     margin-bottom: 15px;
 }
 
-.payment-option img {
-    width: 150px;
-    height: 60px;
-    margin-right: 20px;
-    border-radius: 5px;
-}
 
 .payment-option span {
     font-size: 1.2em;
 }
 
-button#next-btn {
+#next-btn {
     padding: 12px 20px;
     background-color: #f39c12;
     color: white;
