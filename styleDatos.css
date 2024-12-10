@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    z-index: 2;
+    position: relative;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-right: 20px;
+    flex: 1;
+}
+
+header h2 {
+    font-size: 1.2em;
+    color: #f39c12;
+    margin: 0;
+    padding: 0;
+}
+
+header h2:first-of-type {
+    margin-right: 5px;
+}
+
+header h2:last-of-type {
+    margin-left: 5px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+header a:hover {
+    background-color: #f39c12;
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #f39c12;
+}
+
+.search-box {
+    display: flex;
+    align-items: center; /* Asegura que los elementos estén alineados en la misma fila */
+}
+
+#search-input {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    width: 250px; /* Puedes ajustar el tamaño */
+    margin-right: 10px; /* Espacio entre el input y el botón */
+}
+
+.search-button {
+    padding: 8px 12px;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #e67e22;
+}
+
+/* Formulario */
+.form-container {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2em;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e67e22;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+footer a:hover {
+    color: #f39c12;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .form-container {
+        width: 95%;
+    }
+
+    /* Asegura que el buscador y el botón se mantengan en la misma fila en pantallas pequeñas */
+    .search-box {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #search-input {
+        width: 80%; /* Ajuste de tamaño para pantallas pequeñas */
+    }
+}
