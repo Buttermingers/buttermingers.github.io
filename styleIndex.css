@@ -1,58 +1,60 @@
+/* Estilo base de todos los elementos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-html, body {
+  }
+  
+  /* Estilo básico de la página */
+  html, body {
     width: 100%;
     overflow-x: hidden;
-}
-
-body {
+  }
+  
+  body {
+    background-color: #f1efec;
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
-
-header {
+  }
+  
+  header {
     background-color: #333;
     color: white;
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
     align-items: center;
     padding: 20px;
     position: relative;
-    width: 100%; 
-}
-
-header h1 {
+    width: 100%;
+  }
+  
+  header h1 {
     font-size: 3em;
     margin-right: 20px;
     flex: 1;
-}
-
-header h2 {
+  }
+  
+  header p {
     font-size: 1.2em;
+    margin-left: 15px;
     color: #f39c12;
-    margin-left: 15px; 
-    padding: 0;
-}
-
-header a {
+  }
+  
+  header a {
     position: relative;
     text-decoration: none;
     display: flex;
     color: white;
     border-radius: 5px;
-}
-
-a:hover {
+  }
+  
+  a:hover {
     background-color: #f39c12;
-}
+  }
 
-nav {
+  nav {
     background-color: #333;
     color: white;
     padding: 10px;
@@ -103,48 +105,86 @@ nav ul li a:hover {
     background-color: #e67e22;
 }
 
-
-main {
-    height: auto;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  
+  .menu li:hover {
+    background-color: #333;
+  }
+  
+  img {
+    max-width: 100%; /* Ajusta la imagen al tamaño del contenedor */
+    height: auto; /* Mantiene la proporción */
+    display: block; /* Evita que la imagen esté en línea con el texto */
+    margin: 0 auto; /* Centra la imagen dentro del contenedor */
 }
 
-.menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 10px;
-    margin: 0 20px;
-}
-
-.menu-item {
-    margin-top: 18PX;
-    text-align: center;
-    width: 20%;
-}
-
-.menu-item img {
+  /* Sistema de columnas responsive */
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  
+  [class*="col-"] {
     width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media only screen and (min-width: 600px) {
+    /* Para tablets */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* Para escritorios */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
 
-}
-
-.menu-item p {
-    margin-top: 10px;
-    font-size: 1em;
-    color: #280808;
-}
-
-.menu-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-footer {
+  
+  
+  /* Estilos de la barra lateral */
+  .aside {
+    background-color: #333;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  
+  footer {
     background-color: #333;
     color: white;
     padding: 2% 10px;
@@ -156,53 +196,8 @@ footer a {
     color: white;
     text-decoration: none;
     font-size: 1.2em;
-}
-
-
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    header h1 {
-        margin-bottom: 10px;
-        
-    }
-
-    header h2 {
-        margin-bottom: 5px;
-    }
-
-    header a {
-        margin-top: 10px;
-    }
-
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin-bottom: 5px;
-    }
-
-    .menu {
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: 10px;
-    }
-
-    .menu-item {
-        width: 45%;
-    }
-
-    footer {
-        text-align: center;
-    }
+  
+  footer p {
+    font-size: 1em;
+  }
 }

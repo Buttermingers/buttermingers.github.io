@@ -1,96 +1,69 @@
-<!doctype html>
-<html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Guitar World</title>
-		<link rel="stylesheet" href="styleIndex.css">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleIndex.css">
+    <title>Mundo de las Guitarras</title>
+    
+</head>
+<header>
+    <h1>Guitar World</h1>
+    <h2><a href="datos.html">Mi Cuenta</a></h2>
+    <h2><a href="cesta.html">Carrito</a></h2>
+</header>
 
-	</head>
+<nav>
+    <ul>
+        <li><a href="catalogo.html">Catalogo</a></li>
+        <li><a href="#">Novedades</a></li>
+    </ul>
+    <div class="search-box">
+        <form method="get" id="search-form">
+              <input type="text" id="search-input" placeholder="Buscar"  />
+              <input class="search-button" type="submit" value="Buscar" />
+              <i class="search-icon"></i>
+        </form>
+     </div>
+</nav>
 
-	<body>
-		<header>
-			<h1>Guitar World</h1>
-			<h2><a href="datos.html">Mi Cuenta</a></h2>
-			<h2><a href="cesta.html">Carrito</a></h2>
-		</header>
+<body>
+    <div class="header">
+    </div>
 
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Novedades</a></li>
-			</ul>
-			<div class="search-box">
-				<form method="get" id="search-form">
-					  <input type="text" id="search-input" placeholder="Buscar"  />
-					  <input class="search-button" type="submit" value="Buscar" />
-					  <i class="search-icon"></i>
-				</form>
-			 </div>
-		</nav>
-		
-		<main>
-			<h2>Modelos</h2>
-			<section class="menu">
-				<div class="menu-item">
-					<a title="Strato" href="Strato.html">
-						<img src="img/menu/guitarras-electricas-stratocaster.jpg" alt="Strato">
-						<p>Strato</p>
-					</a>
-				</div>
-				
-				<div class="menu-item">
-					<a title="Tele" href="#">
-						<img src="img/menu/guitarras-electricas-telecaster.jpg" alt="Tele">
-						<p>Tele</p>
-					</a>
-				</div>
-		
-				<div class="menu-item">
-					<a title="LesPaul" href="#">
-						<img src="img/menu/single-cut.jpg" alt="LesPaul">
-						<p>LesPaul</p>
-					</a>
-				</div>
-		
-				<div class="menu-item">
-					<a title="SG" href="#">
-						<img src="img/menu/guitarras-electricas-double-cut.jpg" alt="SG">
-						<p>SG</p>
-					</a>
-				</div>
-		
-				<div class="menu-item">
-					<a title="Hollow" href="#">
-						<img src="img/menu/guitarras-electricas-hollowbody.jpg" alt="Hollow">
-						<p>Hollow</p>
-					</a>
-				</div>
+    <div class="row">
+        <div class="col-3 col-s-12 menu">
+            <a title="Strato" href="Strato.html">
+                <img src="img\menu\R.gif" alt="Strato">
+                
+            </a>
+        </div>
 
-				<div class="menu-item">
-					<a title="Custom" href="#">
-						<img src="img\menu\custom-shop.jpg" alt="Custom">
-						<p>Custom</p>
-					</a>
-				</div>
+        <div class="col-6 col-s-12">
+            <h1>Explora nuestra colección</h1>
+            <p>En Mundo de las Guitarras, ofrecemos una amplia gama de guitarras para todos los niveles. Ya seas un principiante o un profesional, tenemos la guitarra perfecta para ti. Explora nuestras categorías:</p>
+            <ul>
+                <li>Guitarras Eléctricas: Encuentra guitarras eléctricas de alta calidad de las principales marcas.</li>
+                <li>Guitarras Acústicas: Descubre una variedad de guitarras acústicas para todos los estilos musicales.</li>
+                <li>Guitarras Bajo: Navega por nuestra selección de guitarras bajo para músicos que quieren dominar el escenario.</li>
+                <li>Accesorios: Desde púas hasta correas y amplificadores, tenemos todo lo que necesitas.</li>
+            </ul>
+        </div>
 
-				<div class="menu-item">
-					<a title="Heavy" href="#">
-						<img src="img\menu\guitarras-electricas-heavy.jpg" alt="Heavy">
-						<p>Heavy</p>
-					</a>
-				</div>
+        <div class="col-3 col-s-12">
+            <div class="aside">
+                <h2>¿Por qué Mundo de las Guitarras?</h2>
+                <p>Ofrecemos una vasta selección de guitarras, todas elegidas cuidadosamente por su calidad y rendimiento.</p>
+                <h2>Envío Gratis</h2>
+                <p>Disfruta de envío gratis en todas las compras superiores a $50.</p>
+                <h2>Asesoría Experta</h2>
+                <p>¿Necesitas ayuda para elegir la guitarra adecuada? Nuestros expertos están aquí para ayudarte.</p>
+            </div>
+        </div>
+    </div>
 
-				<div class="menu-item">
-					<a title="Jazzmaster/Jaguar" href="#">
-						<img src="img\menu\jazzmaster-jaguar.jpg" alt="Jazzmaster/Jaguar">
-						<p>Jazzmaster/Jaguar</p>
-					</a>
-				</div>
-			</section>
-		</main>
-		
-		<footer>
-			<a href="kontaktuak.html">Contactos</a>
-		</footer>
-	</body>
+    <footer>
+        <a href="kontaktuak.html">Contactos</a>
+    </footer>
+
+</body>
 </html>
