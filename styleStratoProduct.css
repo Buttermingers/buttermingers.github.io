@@ -19,39 +19,32 @@ header {
     background-color: #333;
     color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end; 
     align-items: center;
     padding: 20px;
-    width: 100%;
+    position: relative;
+    width: 100%; 
 }
 
 header h1 {
     font-size: 3em;
+    margin-right: 20px;
     flex: 1;
-    text-align: center;
 }
 
 header h2 {
-    border-radius: 5px;
-    transition: background-color 0.3s;
     font-size: 1.2em;
     color: #f39c12;
-    margin: 0;
+    margin-left: 15px; 
     padding: 0;
-}
-
-header h2:first-of-type {
-    margin-right: 10px;
 }
 
 header a {
     position: relative;
+    text-decoration: none;
     display: flex;
-    gap: 10px;
     color: white;
-    text-align: left;
     border-radius: 5px;
-    transition: background-color 0.3s;
 }
 
 a:hover {
@@ -67,6 +60,7 @@ main {
 }
 
 h2 {
+    margin-top: 10px;
     text-align: center;
 }
 
@@ -77,7 +71,6 @@ section {
     gap: 15px;
     margin-top: 20px;
 }
-
 
 #Fenderimg, #Fenderimg2, #Fenderimg3, #Fenderimg4 {
     border: dotted 1px;
@@ -224,96 +217,32 @@ footer a:hover {
     background-color: #e67e22;
 }
 
-
-
-@media (max-width: 1024px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    section {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    #Fenderimg, #Fenderimg2, #Fenderimg3, #Fenderimg4 {
-        width: 90%;  /* Imágenes más grandes en pantallas pequeñas */
-        max-width: 400px;  /* Limita el tamaño máximo */
-    }
-
-    #Fenderinfo {
-        width: 90%;  /* El contenedor de texto ocupa el 90% del ancho */
-        padding: 15px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    footer a {
-        font-size: 1em;
-    }
-
-    .search-box {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
 @media (max-width: 1024px) {
     section {
-        grid-template-columns: 1fr; /* Cambia a una sola columna */
-        gap: 10px;
-    }
-
-    #Fenderimg, #Fenderimg2, #Fenderimg3, #Fenderimg4 {
-        height: auto; /* Ajusta las imágenes a su tamaño natural */
-        min-height: 200px; /* Evita que las imágenes se hagan demasiado pequeñas */
-        order: 1; /* Coloca las imágenes primero en la columna */
-    }
-
-    #Fenderinfo {
-        grid-column: 1 / 2;  /* Asegura que el texto ocupe toda la columna */
-        order: 2; /* Coloca el texto después de las imágenes */
-        padding: 20px;
-    }
-
-    nav ul {
+        display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
     }
 
-    .search-box {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    footer a {
-        font-size: 1em;
-    }
-}
-
-@media (max-width: 768px) {
-    section {
-        grid-template-columns: 1fr; /* Cambia a una sola columna */
-        gap: 10px; /* Añadido para mayor espacio entre los elementos */
+    .image-container {
+        display: flex;
+        justify-content: center;
     }
 
     #Fenderimg, #Fenderimg2, #Fenderimg3, #Fenderimg4 {
         height: auto;
-        min-height: 150px; /* Mantiene un tamaño mínimo de imagen */
-        width: 100%; /* Asegura que las imágenes no se desborden */
-        margin-bottom: 10px; /* Agrega espacio debajo de las imágenes */
+        width: 100%;
+        min-height: 150px;
+        margin-bottom: 10px;
+        object-fit: cover;
     }
 
     #Fenderinfo {
-        width: 100%; /* Asegura que el texto ocupe toda la columna */
+        width: 100%;
         padding: 15px;
-        background-color: #f7f7f7; /* Fondo claro para el texto */
-        box-sizing: border-box; /* Asegura que el padding no cause desbordamiento */
-        margin-top: 10px; /* Añade un margen superior para separar el texto de las imágenes */
+        background-color: #f7f7f7;
+        box-sizing: border-box;
+        margin-top: 10px;
     }
 
     footer {
@@ -327,7 +256,7 @@ footer a:hover {
 
 @media (max-width: 480px) {
     section {
-        grid-template-columns: 1fr; /* Cambia a una sola columna */
+        flex-direction: column;
     }
 
     header h1 {
@@ -344,16 +273,16 @@ footer a:hover {
     }
 
     #Fenderimg, #Fenderimg2, #Fenderimg3, #Fenderimg4 {
-        height: auto;
-        min-height: 120px; /* Mantiene un tamaño mínimo de imagen */
-        width: 100%; /* Asegura que las imágenes no se desborden */
-        margin-bottom: 10px; /* Añade espacio debajo de las imágenes */
+        min-height: 120px;
+        width: 100%;
+        margin-bottom: 10px;
+        object-fit: cover;
     }
 
     #Fenderinfo {
-        width: 100%; /* Asegura que el texto ocupe toda la columna */
+        width: 100%;
         padding: 10px;
-        background-color: #f7f7f7; /* Fondo claro para el texto */
-        margin-top: 10px; /* Añade margen superior para separar el texto */
+        background-color: #f7f7f7;
+        margin-top: 10px;
     }
 }
