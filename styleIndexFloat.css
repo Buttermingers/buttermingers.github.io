@@ -1,0 +1,218 @@
+/* General reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general para el cuerpo y HTML */
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #f1efec;
+    font-family: Arial, sans-serif;
+    display: block;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+  }
+  
+  header h1 {
+    font-size: 3em;
+    margin-right: 20px;
+    flex: 1;
+  }
+  
+  header p {
+    font-size: 1.2em;
+    margin-left: 15px;
+    color: #f39c12;
+  }
+  
+  header a {
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  a:hover {
+    background-color: #f39c12;
+  }
+
+/* Navigation */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    clear: both;
+    display: flex; /* Cambiar a flexbox para control más fácil */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Alineación de los elementos */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Alinear los elementos horizontalmente */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #f39c12;
+}
+
+/* Formulario de búsqueda */
+.search-box {
+    display: flex; /* Usamos flexbox para alineación */
+    align-items: center;
+}
+
+#search-input {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+.search-button {
+    padding: 8px 12px;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #e67e22;
+}
+
+/* Estilos de la columna */
+.col-3, .col-6 {
+    padding: 15px;
+    float: left;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-s-12 {
+    width: 100%;
+}
+
+.menu img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos de la barra lateral */
+.aside {
+    background-color: #333;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 2% 10px;
+    text-align: center;
+    clear: both;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Sistema de columnas responsive con float */
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+/* Por defecto, las columnas tienen un 100% de ancho */
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    /* Para tablets */
+    .col-s-1 { width: 8.33%; }
+    .col-s-2 { width: 16.66%; }
+    .col-s-3 { width: 25%; }
+    .col-s-4 { width: 33.33%; }
+    .col-s-5 { width: 41.66%; }
+    .col-s-6 { width: 50%; }
+    .col-s-7 { width: 58.33%; }
+    .col-s-8 { width: 66.66%; }
+    .col-s-9 { width: 75%; }
+    .col-s-10 { width: 83.33%; }
+    .col-s-11 { width: 91.66%; }
+    .col-s-12 { width: 100%; }
+}
+
+@media only screen and (min-width: 768px) {
+    /* Para escritorios */
+    .col-1 { width: 8.33%; }
+    .col-2 { width: 16.66%; }
+    .col-3 { width: 25%; }
+    .col-4 { width: 33.33%; }
+    .col-5 { width: 41.66%; }
+    .col-6 { width: 50%; }
+    .col-7 { width: 58.33%; }
+    .col-8 { width: 66.66%; }
+    .col-9 { width: 75%; }
+    .col-10 { width: 83.33%; }
+    .col-11 { width: 91.66%; }
+    .col-12 { width: 100%; }
+}
+
+/* Aseguramos que las columnas flotadas no se solapen al final de la página */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
