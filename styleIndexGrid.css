@@ -1,11 +1,11 @@
-/* General reset for margin and padding */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo general para el cuerpo y HTML */
+
 html, body {
     width: 100%;
     overflow-x: hidden;
@@ -18,7 +18,7 @@ body {
     min-height: 100vh;
 }
 
-/* Header */
+
 header {
     background-color: #333;
     color: white;
@@ -54,22 +54,22 @@ header {
     background-color: #f39c12;
   }
 
-/* Navigation */
+
 nav {
     background-color: #333;
     color: white;
     padding: 10px;
     width: 100%;
-    display: flex; /* Cambiar a flexbox para control más fácil */
-    justify-content: space-between; /* Espacio entre los elementos */
-    align-items: center; /* Alineación de los elementos */
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
 }
 
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Alinear los elementos horizontalmente */
+    display: flex; 
 }
 
 nav ul li {
@@ -87,9 +87,9 @@ nav ul li a:hover {
     background-color: #f39c12;
 }
 
-/* Formulario de búsqueda */
+
 .search-box {
-    display: flex; /* Usamos flexbox para alineación */
+    display: flex; 
     align-items: center;
 }
 
@@ -112,29 +112,29 @@ nav ul li a:hover {
     background-color: #e67e22;
 }
 
-/* Grid Container */
+
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(12, 1fr); /* 12 columnas de igual tamaño */
-    grid-template-rows: auto; /* Ajusta las filas automáticamente */
-    grid-gap: 15px; /* Espacio entre las celdas */
+    grid-template-columns: repeat(12, 1fr); 
+    grid-template-rows: auto; 
+    grid-gap: 15px; 
     width: 100%;
     padding: 20px;
 }
 
 .col-3 {
-    grid-column: span 3; /* 3 columnas de ancho */
+    grid-column: span 3; 
 }
 
 .col-6 {
-    grid-column: span 6; /* 6 columnas de ancho */
+    grid-column: span 6; 
 }
 
 .col-12 {
-    grid-column: span 12; /* 12 columnas de ancho */
+    grid-column: span 12; 
 }
 
-/* Estilos de la columna */
+
 .menu img {
     max-width: 100%;
     height: auto;
@@ -142,7 +142,7 @@ nav ul li a:hover {
     margin: 0 auto;
 }
 
-/* Estilos de la barra lateral */
+
 .aside {
     background-color: #333;
     padding: 15px;
@@ -151,7 +151,7 @@ nav ul li a:hover {
     font-size: 14px;
 }
 
-/* Footer */
+
 footer {
     background-color: #333;
     color: white;
@@ -169,21 +169,21 @@ footer p {
     font-size: 1em;
 }
 
-/* Responsivo con Grid */
+
 @media (max-width: 768px) {
     .grid-container {
         grid-template-columns: repeat(12, 1fr);
     }
 
     .col-3 {
-        grid-column: span 12; /* Columna completa en pantallas pequeñas */
+        grid-column: span 12; 
     }
 
     .col-6 {
-        grid-column: span 12; /* Columna completa en pantallas pequeñas */
+        grid-column: span 12; 
     }
 
     .col-12 {
-        grid-column: span 12; /* Columna completa en pantallas pequeñas */
+        grid-column: span 12; 
     }
 }
