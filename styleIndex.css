@@ -124,13 +124,13 @@ nav ul li a:hover {
   }
   
   img {
-    max-width: 100%; /* Ajusta la imagen al tamaño del contenedor */
-    height: auto; /* Mantiene la proporción */
-    display: block; /* Evita que la imagen esté en línea con el texto */
-    margin: 0 auto; /* Centra la imagen dentro del contenedor */
+    max-width: 100%;
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
 }
 
-  /* Sistema de columnas responsive */
+ 
   [class*="col-"] {
     float: left;
     padding: 15px;
@@ -174,7 +174,7 @@ nav ul li a:hover {
 
   
   
-  /* Estilos de la barra lateral */
+
   .aside {
     background-color: #333;
     padding: 15px;
