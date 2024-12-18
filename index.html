@@ -4,71 +4,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleIndex.css">
     <title>Guitar World</title>
-    
 </head>
-<header>
-    <h1>Guitar World</h1>
-    <h2><a href="datos.html">Mi Cuenta</a></h2>
-    <h2><a href="cesta.html">Carrito</a></h2>
-</header>
-
-<nav>
-    <ul>
-        <li><a href="catalogo.html">Catalogo</a></li>
-        <li><a href="#">Novedades</a></li>
-    </ul>
-    <div class="search-box">
-        <form method="get" id="search-form">
-              <input type="text" id="search-input" placeholder="Buscar"  />
-              <input class="search-button" type="submit" value="Buscar" />
-              <i class="search-icon"></i>
-        </form>
-     </div>
-</nav>
 
 <body>
-    <div class="header">
-    </div>
+    <header>
+        <h1>Guitar World</h1>
+        <h2><a href="datos.html">Mi Cuenta</a></h2>
+        <h2><a href="cesta.html">Carrito</a></h2>
+    </header>
 
-    <div class="row">
-        <div class="col-3 col-s-12 menu">
-            <a title="Strato" href="#">
-                <img src="img\menu\R.gif" alt="Strato">
-                
-            </a>
+    <nav>
+        <ul>
+            <li><a href="catalogo.html" aria-label="Ver catálogo">Catalogo</a></li>
+            <li><a href="#" aria-label="Ver novedades">Novedades</a></li>
+        </ul>
+        <div class="search-box">
+            <form action="search.html" method="get" id="search-form">
+                <input type="text" id="search-input" name="query" placeholder="Buscar" />
+                <input class="search-button" type="submit" value="Buscar" />
+            </form>
         </div>
+    </nav>
 
-        <div class="col-6 col-s-12">
-            <h1>Novedades</h1>
-            <br>
-					<a title="Strato" href="#">
-						<img src="img/menu/guitarras-electricas-stratocaster.jpg" alt="Strato">
-						<p> "Fender Stratocaster 1975 rebuild" por 1099 $</p>
-					</a>
+    <main>
+        
+            <div class="col-3 col-s-12 menu">
+                <div class="latest-news">
+                    <h3>Últimas Novedades</h3>
+                    <p>En Guitar World, siempre estamos al tanto de las últimas tendencias en guitarras y accesorios. Desde guitarras clásicas hasta las más innovadoras, cada semana traemos novedades para ti. ¡No te pierdas lo mejor del mundo de las guitarras!</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-s-12">
+                <div class="novedades">
+                    <h1>Novedades</h1>
+                    <br>
+                    <a title="Strato" href="#">
+                        <img src="img\menu\gibson-explorer-2019-antique-natural.jpg" alt="GIBSON">
+                        <p>"Gibson Explorer 70 Antique Natural </p>
+                    </a>
                     <a title="Hollow" href="#">
-						<img src="img/menu/guitarras-electricas-hollowbody.jpg" alt="Hollow">
-						<p>Gibson Hollow  Casino 2449 $ </p>
-					</a>
-					<a title="Jazzmaster/Jaguar" href="#">
-						<img src="img\menu\jazzmaster-jaguar.jpg" alt="Jazzmaster">
-						<p> Fender Jazzmaster Blue pearl relic 949$</p>
-					</a>
-				</div>
-        <div class="col-3 col-s-12">
-            <div class="aside">
-                <h2>¿Por qué Guitar World?</h2>
-                <p>Ofrecemos una vasta selección de guitarras, todas elegidas cuidadosamente por su calidad y rendimiento.</p>
-                <h2>Envío Gratis</h2>
-                <p>Disfruta de envío gratis en todas las compras superiores a $50.</p>
-                <h2>Asesoría Experta</h2>
-                <p>¿Necesitas ayuda para elegir la guitarra adecuada? Nuestros expertos están aquí para ayudarte.</p>
+                        <img src="img\menu\fender-classic-vibe-tele-custom-3cs.jpg" alt="FENDER">
+                        <p>Fender Richie Kotzen Telecaster MN BSB</p>
+                    </a>
+                    <a title="Jazzmaster/Jaguar" href="#">
+                        <img src="img/menu/jazzmaster-jaguar.jpg" alt="FENDER">
+                        <p>Fender Jazzmaster Blue pearl relic </p>
+                    </a>
+                </div>    
+            </div>
+
+            <div class="col-3 col-s-12">
+                <div class="aside">
+                    <h2>¿Por qué Guitar World?</h2>
+                    <p>Ofrecemos una vasta selección de guitarras, todas elegidas cuidadosamente por su calidad y rendimiento.</p>
+                    <h2>Envío Gratis</h2>
+                    <p>Disfruta de envío gratis en todas las compras superiores a $50.</p>
+                    <h2>Asesoría Experta</h2>
+                    <p>¿Necesitas ayuda para elegir la guitarra adecuada? Nuestros expertos están aquí para ayudarte.</p>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <footer>
         <a href="#">Contactos</a>
     </footer>
-
 </body>
 </html>
