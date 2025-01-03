@@ -56,9 +56,7 @@ header a {
     text-decoration: none;
 }
 
-a:hover {
-    background-color: #f39c12;
-}
+
 
 nav {
     background-color: #333;
@@ -140,7 +138,6 @@ h2.main-title {
 }
 
 .menu-item {
-    background-color: rgb(228, 228, 201);
     padding: 15px;
     border-radius: 8px;
     text-align: center;
@@ -184,9 +181,6 @@ footer a {
     font-size: 1.2em;
 }
 
-footer a:hover {
-    color: #f39c12;
-}
 
 @media (max-width: 768px) {
     header {
