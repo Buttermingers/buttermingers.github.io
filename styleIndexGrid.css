@@ -24,7 +24,7 @@ header {
     align-items: center;
     padding: 20px;
     position: relative;
-    width: 100%; 
+    width: 100%;
 }
 
 header h1 {
@@ -36,7 +36,7 @@ header h1 {
 header h2 {
     font-size: 1.2em;
     color: #f39c12;
-    margin-left: 15px; 
+    margin-left: 15px;
     padding: 0;
 }
 
@@ -51,22 +51,23 @@ header a {
 header a:hover {
     background-color: #f39c12;
 }
+
 nav {
     background-color: #333;
     color: white;
     padding: 10px;
     width: 100%;
     clear: both;
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex; 
+    display: flex;
 }
 
 nav ul li {
@@ -84,9 +85,8 @@ nav ul li a:hover {
     background-color: #f39c12;
 }
 
-
 .search-box {
-    display: flex; 
+    display: flex;
     align-items: center;
 }
 
@@ -109,7 +109,6 @@ nav ul li a:hover {
     background-color: #e67e22;
 }
 
-
 .main-content {
     display: grid;
     grid-template-columns: 1fr;
@@ -119,18 +118,6 @@ nav ul li a:hover {
 
 .col-3, .col-6, .col-12 {
     padding: 15px;
-}
-
-.col-3 {
-    grid-column: span 3;
-}
-
-.col-6 {
-    grid-column: span 6;
-}
-
-.col-12 {
-    grid-column: span 12;
 }
 
 .novedades {
@@ -186,55 +173,70 @@ footer p {
     font-size: 1em;
 }
 
-
 .row {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
 }
 
-[class*="col-"] {
-    padding: 15px;
+@media only screen and (max-width: 768px) {
+    .row {
+        grid-template-columns: 1fr;
+    }
+
+    .col-3 {
+        grid-column: span 1;
+    }
+
+    .col-6 {
+        grid-column: span 1;
+    }
+
+    .col-12 {
+        grid-column: span 1;
+    }
+
+    .aside {
+        grid-column: span 1;
+    }
 }
 
-[class*="col-"] {
-    width: 100%;
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .col-3 {
+        grid-column: span 1;
+    }
+
+    .col-6 {
+        grid-column: span 1;
+    }
+
+    .aside {
+        grid-column: span 2;
+    }
 }
 
+@media only screen and (min-width: 1024px) {
+    .row {
+        grid-template-columns: 3fr 6fr 3fr;
+    }
 
-@media only screen and (min-width: 600px) {
-    .col-s-1 { grid-column: span 1; }
-    .col-s-2 { grid-column: span 2; }
-    .col-s-3 { grid-column: span 3; }
-    .col-s-4 { grid-column: span 4; }
-    .col-s-5 { grid-column: span 5; }
-    .col-s-6 { grid-column: span 6; }
-    .col-s-7 { grid-column: span 7; }
-    .col-s-8 { grid-column: span 8; }
-    .col-s-9 { grid-column: span 9; }
-    .col-s-10 { grid-column: span 10; }
-    .col-s-11 { grid-column: span 11; }
-    .col-s-12 { grid-column: span 12; }
-}
+    .col-3 {
+        grid-column: span 1;
+    }
 
-@media only screen and (min-width: 768px) {
-    
-    .col-1 { grid-column: span 1; }
-    .col-2 { grid-column: span 2; }
-    .col-3 { grid-column: span 3; }
-    .col-4 { grid-column: span 4; }
-    .col-5 { grid-column: span 5; }
-    .col-6 { grid-column: span 6; }
-    .col-7 { grid-column: span 7; }
-    .col-8 { grid-column: span 8; }
-    .col-9 { grid-column: span 9; }
-    .col-10 { grid-column: span 10; }
-    .col-11 { grid-column: span 11; }
-    .col-12 { grid-column: span 12; }
-}
+    .col-6 {
+        grid-column: span 1;
+    }
 
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
+    .col-12 {
+        grid-column: span 1;
+    }
+
+    .aside {
+        grid-column: span 1;
+    }
 }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pago</title>
+    <link rel="stylesheet" href="styleEskaria4.css">
+</head>
+<body>
+
+    <header>
+        <h1>Guitar World</h1>
+        <h2><a href="datos.html">Mi Cuenta</a></h2>
+        <h2><a href="cesta.html">Carrito</a></h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="catalogo.html">Catalogo</a></li>
+            <li><a href="#">Novedades</a></li>
+        </ul>
+        <div class="search-box">
+            <form method="get" id="search-form">
+                <input type="text" id="search-input" placeholder="Buscar" />
+                <input class="search-button" type="submit" value="Buscar" />
+                <i class="search-icon"></i>
+            </form>
+        </div>
+    </nav>
+
+    <main>
+        <div class="form-container">
+            <h2>Detalles de la Tarjeta de Crédito</h2>
+            <br>
+            <form action="gracias.html" method="get">
+                <label for="nombre-tarjeta">Nombre en la tarjeta:</label>
+                <input type="text" id="nombre-tarjeta" name="nombre-tarjeta" placeholder="Ingresa el nombre de la tarjeta" >
+
+                <label for="numero-tarjeta">Número de tarjeta:</label>
+                <input type="text" id="numero-tarjeta" name="numero-tarjeta" placeholder="XXXX XXXX XXXX XXXX" maxlength="19" >
+
+                <label for="fecha-expiracion">Fecha de Expiración:</label>
+                <input type="text" id="fecha-expiracion" name="fecha-expiracion" placeholder="MM/AAAA" maxlength="7" >
+
+                <label for="codigo-seguridad">Código de Seguridad (CVV):</label>
+                <input type="text" id="codigo-seguridad" name="codigo-seguridad" placeholder="XXX" maxlength="3" >
+
+                <button type="submit">Realizar Pago</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <ul>
+            <a href="contactos.html">Contactos</a>
+        </ul>
+    </footer>
+
+</body>
+</html>
